@@ -1,4 +1,11 @@
+"""	
+Created on Tue Feb 11 22:45:21 2020	
+@author: Mahedi MAHALAL	
+inspired from https://github.com/mahesh147/KMeans-Clustering	
+"""	
+# K-Means Clustering
 
+# Importing the libraries
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
