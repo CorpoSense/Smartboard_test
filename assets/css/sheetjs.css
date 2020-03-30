@@ -1,6 +1,8 @@
-
+/* sheetjs.css (C) 2014-present SheetJS -- http://sheetjs.com */
+/* vim: set ts=2: */
 html {
   overflow: hidden;
+  background-color: #ffedea;
 }
 #drop{
   border:2px dashed #bbb;
