@@ -4,7 +4,7 @@ html {
 
 body {
   margin: 0;
-  background-color: #F5F5FF;
+  background-color: #ffffff;
   font-family: Helvetica, Arial, FreeSans, sans-serif;
   color: #454545;
   font-size: 14px;
@@ -108,7 +108,7 @@ ul ul {
 .warning {
   border: 1px solid #D4D8EB;
   padding: 10px;
-  background: #F0F1F8;
+  background: rgb(255, 255, 255);
   box-shadow: 2px 2px 7px #777;
   margin-bottom: 40px;
 }

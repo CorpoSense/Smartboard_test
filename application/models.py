@@ -1,6 +1,6 @@
-from application import db, login_manager
+from application import app, db, login_manager
 from flask_login import UserMixin
-
+from flask_user import UserManager
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -17,3 +17,5 @@ class User(db.Model, UserMixin):
 
     def __repr__(self):
         return f"User('{self.username}', '{self.email})"
+
+
