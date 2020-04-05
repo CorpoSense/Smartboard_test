@@ -5,19 +5,23 @@ from application.models import User
 from flask_login import login_user, current_user, logout_user, login_required
 
 @app.route("/")
-@app.route("/home")
-def home():
-    return render_template("home.html")
+@app.route("/acceuil")
+def acceuil():
+    return render_template("acceuil.html")
 
 
 @app.route("/about")
 def about():
     return render_template("about.html")
 
+@app.route("/home")
+def home():
+    return render_template("home.html")
+
 @app.route("/register", methods=['GET', 'POST'])
 def register():
     if current_user.is_authenticated:
-        return redirect(url_for('home'))
+        return redirect(url_for('acceuil'))
     form = RegistrationForm()
     if form.validate_on_submit():
         hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
@@ -47,7 +51,7 @@ def login():
 @app.route("/logout")
 def logout():
     logout_user()
-    return redirect(url_for('home'))
+    return redirect(url_for('acceuil'))
 
 
 @app.route("/account")
