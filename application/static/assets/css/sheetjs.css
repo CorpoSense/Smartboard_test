@@ -1,9 +1,8 @@
 html {
   overflow: hidden;
-
-    background-color:white;
-
+  background-color:white;
 }
+
 #drop{
   border:2px dashed #bbb;
   -moz-border-radius:5px;
