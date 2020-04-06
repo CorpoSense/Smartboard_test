@@ -1,39 +1,24 @@
 {% extends "layout.html" %}
 {% block content %}
 <!DOCTYPE html>
-
- 
 <html>
   <head>
     <title>SheetJS</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
- 
-    <link rel="icon" type="image/png" href="assets/img/logo.png" />
-    <link rel="stylesheet" href="assets/css/sheetjs.css">
-  </head>
-  <body>
-    <script src="assets/vendor/alertify.js"></script>
-    <script src="assets/js/canvas-datagrid.js"></script>
-
-    <link rel="stylesheet" media="screen" href="assets/vendor/samples.css">
-    <link rel="stylesheet" media="screen" href="assets/vendor/alertify.css">
-
     <link rel="icon" type="image/png" href="static/assets/img/logo.png" />
     <link rel="stylesheet" href="static/assets/css/sheetjs.css">
   </head>
   <body>
     <script src="static/assets/vendor/alertify.js"></script>
     <script src="static/assets/js/canvas-datagrid.js"></script>
-
+    
     <link rel="stylesheet" media="screen" href="static/assets/vendor/samples.css">
     <link rel="stylesheet" media="screen" href="static/assets/vendor/alertify.css">
-
-
+    
     <div id="body">
       <div id="left">
         <div id="logo">
-          <a href="http://sheetjs.com"><img src="assets/img/logo.png" class="logo" alt="CorpoSense Logo" width=170px height=128px /></a>
-          <a href="http://sheetjs.com"><img src="static/assets/img/logo.png" class="logo" alt="CorpoSense Logo" width=170px height=115px /></a>
+          <a><img src="static/assets/img/logo.png" class="logo" alt="CorpoSense Logo" width=170px height=115px /></a>
         </div>
       <div id="drop">Drop a file here</div>
       <h3>Update File</h3>
@@ -42,26 +27,20 @@
       <div id="buttons"></div>
     </div>
     <div id="right">
+      <h2>Analyse Example</h2>
       <div id="header">
-        <h2>Analyse Example</h2>
         <pre id="out"></pre>
       </div>
       <div id="grid"></div>
       <div id="footnote">
       </div>
     </div>
-
-    <script src="assets/js/shim.js"></script>
-    <script src="assets/js/xlsx.full.min.js"></script>
-    <script src="assets/js/dropsheet.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/vendor/spin.js"></script>
     <script src="static/assets/js/shim.js"></script>
     <script src="static/assets/js/xlsx.full.min.js"></script>
     <script src="static/assets/js/dropsheet.js"></script>
     <script src="static/assets/js/main.js"></script>
-
     <script src="static/assets/vendor/spin.js"></script>
+
    <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-36810333-1']);
