@@ -58,3 +58,13 @@ def logout():
 @login_required
 def account():
     return render_template('account.html', title='Account')
+
+""" @app.route('/members')
+@login_required
+def membre():
+    return render_template('account.html')
+
+@app.route('/admin')
+@roles_required('Admin')    # Use of @roles_required decorator
+def admin_page():
+    return render_template('home.html') """
