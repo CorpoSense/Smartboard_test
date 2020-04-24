@@ -16,7 +16,7 @@ html {
 
 #left {
   width:188px;
-  position:absolutes;
+  position:absolute;
   left:0;
 }
 #right {

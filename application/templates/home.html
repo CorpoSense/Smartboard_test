@@ -7,6 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="icon" type="image/png" href="static/assets/img/logo.png" />
     <link rel="stylesheet" href="static/assets/css/sheetjs.css">
+    <style type="text/css"></style>
   </head>
   <body>
     <script src="static/assets/vendor/alertify.js"></script>
@@ -20,28 +21,27 @@
         <div id="logo">
           <a><img src="static/assets/img/logo.png" class="logo" alt="CorpoSense Logo" width=170px height=115px /></a>
         </div>
-      <div id="drop">Drop a file here</div>
-      <h3>Update File</h3>
-      <input type="file" id="file" value=""/><label for="file">... or click here to select a file</label>
-      <h3><b> Choose a worksheet:</b></h3>
-      <div id="buttons"></div>
-    </div>
-    <div id="right">
-      <h2>Analyse Example</h2>
-      <div id="header">
-        <pre id="out"></pre>
+        <div id="drop">Drop a file here</div>
+        <h3>Update File</h3>
+        <input type="file" id="file" value=""/><label for="file">... or click here to select a file</label>
+        <h3><b> Choose a worksheet:</b></h3>
+        <div id="buttons"></div>
       </div>
-      <div id="grid"></div>
-      <div id="footnote">
+      <div id="right">
+        <div id="header">
+          <h2>Analyse Example</h2>
+          <pre id="out"></pre>
+        </div>  
+       <div id="grid"></div>
+       <div id="footnote"></div>
       </div>
-    </div>
-    <script src="static/assets/js/shim.js"></script>
-    <script src="static/assets/js/xlsx.full.min.js"></script>
-    <script src="static/assets/js/dropsheet.js"></script>
-    <script src="static/assets/js/main.js"></script>
-    <script src="static/assets/vendor/spin.js"></script>
+      <script src="static/assets/js/shim.js"></script>
+      <script src="static/assets/js/xlsx.full.min.js"></script>
+      <script src="static/assets/js/dropsheet.js"></script>
+      <script src="static/assets/js/main.js"></script>
+      <script src="static/assets/vendor/spin.js"></script>
 
-   <script type="text/javascript">
+      <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-36810333-1']);
       _gaq.push(['_setDomainName', 'sheetjs.com']);
@@ -53,7 +53,11 @@
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-    </script>
+     </script>
+    </div> 
+    <input readonly="true" style="position: fixed; top: -5px; left: -5px; border: none; opacity: 0; cursor: pointer;
+     width: 1px; height: 1px; line-height: normal; font-weight: normal; font-family: sans-serif;
+     font-size: 16px;">
   </body>
 </html>
 {% endblock content %}
