@@ -1,5 +1,3 @@
-/* oss.sheetjs.com (C) 2014-present SheetJS -- http://sheetjs.com */
-/* vim: set ts=2: */
 
 /** drop target **/
 var _target = document.getElementById('drop');
@@ -97,3 +95,37 @@ DropSheet({
     foo: 'bar'
   }
 })
+/*JS ADVENCE  
+var TabInput = []
+var TabOutput = []
+
+function removeElement(array, elem) {
+  var index = array.indexOf(elem);
+  if (index > -1) {
+      array.splice(index, 1);
+  }
+}
+
+$(document).ready( function(){
+
+    $('input[name="input"]').amsifySuggestags({
+        type :'bootstrap',
+        afterAdd: function(value) {
+            TabInput.push(value)
+          },
+          afterRemove: function(value) {
+            removeElement(TabInput,value)
+          }
+
+    });
+
+    $('input[name="output"]').amsifySuggestags({
+        type :'bootstrap',
+        afterAdd: function(value) {
+            TabOutput.push(value)
+          },
+          afterRemove: function(value) {
+            removeElement(TabOutput,value)
+          }
+
+    })*/

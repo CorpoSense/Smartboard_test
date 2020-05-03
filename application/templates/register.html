@@ -1,6 +1,7 @@
 {% extends "layout.html" %}
 {% block content %}
-    <div class="content-section">
+<div class="row justify-content-center mt-5">
+    <div class="col-6 shadow p-5 rounded mb-5">
         <form method="POST" action="">
             {{ form.hidden_tag() }}
             <fieldset class="form-group">
@@ -63,10 +64,11 @@
                 {{ form.submit(class="btn btn-outline-info") }}
             </div>
         </form>
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                Already Have An Account? <a class="ml-2" href="{{ url_for('login') }}">Sign In</a>
+            </small>
+        </div>
     </div>
-    <div class="border-top pt-3">
-        <small class="text-muted">
-            Already Have An Account? <a class="ml-2" href="{{ url_for('login') }}">Sign In</a>
-        </small>
-    </div>
+</div>
 {% endblock content %}
