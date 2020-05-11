@@ -3,6 +3,8 @@ from application import app, db, bcrypt
 from application.forms import RegistrationForm, LoginForm
 from application.models import User
 from flask_login import login_user, current_user, logout_user, login_required
+from werkzeug.utils  import secure_filename
+
 
 @app.route("/")
 @app.route("/home")
@@ -10,9 +12,20 @@ def home():
     return render_template("home.html")
 
 
+
+@app.route("/NewModal")
+def NewModal():
+    return render_template("newModal.html")
+
+
+
 @app.route("/about")
 def about():
     return render_template("about.html")
+
+@app.route("/index")
+def index():
+    return render_template("index.html")
 
 @app.route("/register", methods=['GET', 'POST'])
 def register():
@@ -44,6 +57,13 @@ def login():
             flash('Login Unsuccessful. Please check email and password', 'danger')
     return render_template('login.html', title='Login', form=form)
 
+
+@app.route("/preview")
+def preview():
+    return render_template('preview.html')
+
+
+
 @app.route("/logout")
 def logout():
     logout_user()
@@ -54,3 +74,12 @@ def logout():
 @login_required
 def account():
     return render_template('account.html', title='Account')
+
+
+
+@app.route('/CreateModal', methods = ['GET', 'POST'])
+def CreateModal():
+   if request.method == 'POST':
+      f = request.files['file']
+      f.save(secure_filename(f.filename))
+      return request.form.get('input')
