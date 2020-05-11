@@ -17,8 +17,6 @@ def home():
 def NewModal():
     return render_template("newModal.html")
 
-
-
 @app.route("/about")
 def about():
     return render_template("about.html")
@@ -82,4 +80,5 @@ def CreateModal():
    if request.method == 'POST':
       f = request.files['file']
       f.save(secure_filename(f.filename))
+      return request.form.get('input')
       return request.form.get('input')
