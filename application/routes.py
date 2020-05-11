@@ -21,6 +21,10 @@ def NewModal():
 def about():
     return render_template("about.html")
 
+@app.route("/index")
+def index():
+    return render_template("index.html")
+
 @app.route("/register", methods=['GET', 'POST'])
 def register():
     if current_user.is_authenticated:
@@ -76,4 +80,5 @@ def CreateModal():
    if request.method == 'POST':
       f = request.files['file']
       f.save(secure_filename(f.filename))
+      return request.form.get('input')
       return request.form.get('input')
