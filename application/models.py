@@ -1,8 +1,13 @@
-from application import db, login_manager, admin
-from flask_admin import Admin, BaseView, expose
+from application import db, login_manager, admin, app
+from flask import Flask, url_for, redirect, render_template, request, abort
+from flask_sqlalchemy import SQLAlchemy
+from flask_security import Security, SQLAlchemyUserDatastore, RoleMixin, login_required, current_user
+from flask_security.utils import encrypt_password
 from flask_admin.contrib.sqla import ModelView
+from flask_admin.contrib import sqla
+from flask_admin import helpers as admin_helpers
 from flask_login import UserMixin
-from flask_security import RoleMixin, Security, SQLAlchemyUserDatastore, RoleMixin, login_required, current_user
+
 @login_manager.user_loader
 def load_user(user_id):
      return User.query.get(int(user_id))
@@ -32,5 +37,21 @@ class User(db.Model, UserMixin):
 
     def __str__(self):
         return self.email
-admin.add_view(ModelView(User, db.session))
-admin.add_view(ModelView(Role, db.session))
+
+# define UserView
+class UserView(ModelView):
+    
+    can_view_details = True
+    column_exclude_list = ['password', ]
+    column_searchable_list = ['email',]
+
+admin.add_view(UserView(User, db.session))
+
+# define RoleView
+class RoleView(ModelView):
+    
+    can_view_details = True
+    column_searchable_list = ['name',]
+
+admin.add_view(RoleView(Role, db.session))
+
