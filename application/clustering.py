@@ -76,6 +76,6 @@ class Clustering():
 
 # a try :
 
-dataset = Clustering('mall.csv', 3, 4)
+dataset = Clustering('pima-indians-diabetes.data.csv', 3, 4)
 dataset.print_elbow(11)
 dataset.print_kmeans(5)

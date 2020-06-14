@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "blank.html" %}
 {% block content %}
 <!DOCTYPE html>
 <html>
@@ -6,44 +6,44 @@
     <title>SheetJS</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="static/assets/css/sheetjs.css">
+
     <style type="text/css"></style>
   </head>
   <body>
 
     <script src="static/assets/js/canvas-datagrid.js"></script>
-    
+
     <link rel="stylesheet" media="screen" href="static/assets/vendor/samples.css">
     <link rel="stylesheet" media="screen" href="static/assets/vendor/alertify.css">
-    
+
     <div id="body">
       <div id="left">
-        <div id="logo">
-          <a><img src="static/assets/img/logo.png" class="logo" alt="CorpoSense Logo" width=160px height=115px /></a>
-        </div>
         <div id="drop">Drop a file here</div>
-        <h3>Update File</h3>
+        <h3>Upload Data File</h3>
         <input type="file" id="file" value=""/><label for="file">... or click here to select a file</label>
         <h3><b> Choose a worksheet:</b></h3>
         <div id="buttons"></div>
       </div>
       <div id="right">
-        <div id="header">
+        <div >
           <div class="text-center mt-5">
-            <h2> Analyse Example </h2>
+            <h2> Preview Of Selected File </h2>
         </div>
           <pre id="out"></pre>
-        </div>  
+        </div>
        <div id="grid"></div>
        <div id="footnote"></div>
       </div>
+      <script src="static/assets/js/jquery.min.js"></script>
+       <script src="static/assets/vendor/spin.js"></script>
       <script src="static/assets/js/shim.js"></script>
       <script src="//unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
       <script src="static/assets/js/dropsheet.js"></script>
       <script src="static/assets/js/main.js"></script>
-      <script src="static/assets/vendor/spin.js"></script>
 
-      
-    </div> 
+
+
   </body>
+  {% endblock content %}
+
 </html>
-{% endblock content %}

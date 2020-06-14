@@ -7,32 +7,20 @@ from werkzeug.utils  import secure_filename
 
 
 @app.route("/")
-@app.route("/home")
-def home():
-    return render_template("home.html")
+@app.route("/index")
+def index():
+    return render_template("index.html")
 
-
-
-@app.route("/NewModal")
-def NewModal():
-    return render_template("newModal.html")
-
-@app.route("/blank")
-def blank():
-    return render_template("blank.html")
 
 @app.route("/about")
 def about():
     return render_template("about.html")
 
-@app.route("/index")
-def index():
-    return render_template("index.html")
 
 @app.route("/register", methods=['GET', 'POST'])
 def register():
     if current_user.is_authenticated:
-        return redirect(url_for('home'))
+        return redirect(url_for('blank'))
     form = RegistrationForm()
     if form.validate_on_submit():
         hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
@@ -47,14 +35,14 @@ def register():
 @app.route("/login", methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
-        return redirect(url_for('home'))
+        return redirect(url_for('account'))
     form = LoginForm()
     if form.validate_on_submit():
         user = User.query.filter_by(email=form.email.data).first()
         if user and bcrypt.check_password_hash(user.password, form.password.data):
             login_user(user, remember=form.remember.data)
             next_page = request.args.get('next')
-            return redirect(next_page) if next_page else redirect(url_for('home'))
+            return redirect(next_page) if next_page else redirect(url_for('account'))
         else:
             flash('Login Unsuccessful. Please check email and password', 'danger')
     return render_template('login.html', title='Login', form=form)
@@ -65,11 +53,22 @@ def preview():
     return render_template('preview.html')
 
 
-
 @app.route("/logout")
 def logout():
     logout_user()
-    return redirect(url_for('home'))
+    return redirect(url_for('index'))
+
+@app.route("/blank")
+def blank():
+    return render_template('blank.html')
+
+@app.route("/menu")
+def menu():
+    return render_template('menu.html')
+
+@app.route("/model")
+def model():
+    return render_template('model.html')
 
 
 @app.route("/account")
@@ -85,4 +84,5 @@ def CreateModal():
       f = request.files['file']
       f.save(secure_filename(f.filename))
       return request.form.get('input')
-      return request.form.get('input')
+      return request.form.get('output')
+

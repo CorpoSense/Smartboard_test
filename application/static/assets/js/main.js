@@ -9,7 +9,7 @@ var spinner;
 
 var _workstart = function() { spinner = new Spinner().spin(_target); }
 var _workend = function() { spinner.stop(); }
-
+;
 /** Alerts **/
 var _badfile = function() {
   alertify.alert('This file does not appear to be a valid Excel file.  If we made a mistake, please send this file to <a href="mailto:dev@sheetjs.com?subject=I+broke+your+stuff">dev@sheetjs.com</a> so we can take a look.', function(){});
@@ -47,8 +47,8 @@ var make_buttons = function(sheetnames, cb) {
 var cdg = canvasDatagrid({
   parentNode: _grid
 });
-cdg.style.height = '100%';
-cdg.style.width = '100%';
+cdg.style.height = '85%';
+cdg.style.width = '80%';
 
 function _resize() {
   _grid.style.height = (window.innerHeight - 200) + "px";
@@ -95,7 +95,7 @@ DropSheet({
     foo: 'bar'
   }
 })
-/*JS ADVENCE  
+/*JS ADVENCE  */
 var TabInput = []
 var TabOutput = []
 
@@ -127,5 +127,6 @@ $(document).ready( function(){
           afterRemove: function(value) {
             removeElement(TabOutput,value)
           }
+         
+   })});
 
-    })*/
