@@ -9,6 +9,7 @@ SmartBoard is a smart business dashboard that allows users to apply one or more 
 •	Save the generated data model for further analysis (each user/company has his own space to store and restore data model)
 •	Use the predefined model on a new uploaded dataset for analysis
 # Show selected columns
-• ![screenshoot](./application/showcolumns.PNG)
+• This screenshoot shows the columns we selected 
+![screenshoot](./application/showcolumns.PNG)
 # Install the requirements inside the app folder
 • $ pip install -r requirements.txt
