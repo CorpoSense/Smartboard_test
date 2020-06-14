@@ -159,5 +159,5 @@ dmypy.json
 # db
 application/site.db
 
-.gitignore
-/node_modules
+# node modules
+application/static/node_modules
