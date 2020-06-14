@@ -158,3 +158,6 @@ dmypy.json
 
 # db
 application/site.db
+
+.gitignore
+/node_modules
