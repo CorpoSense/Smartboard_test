@@ -76,13 +76,3 @@ def model():
 def account():
     return render_template('account.html', title='Account')
 
-
-
-@app.route('/CreateModal', methods = ['GET', 'POST'])
-def CreateModal():
-   if request.method == 'POST':
-      f = request.files['file']
-      f.save(secure_filename(f.filename))
-      return request.form.get('input')
-      return request.form.get('output')
-
