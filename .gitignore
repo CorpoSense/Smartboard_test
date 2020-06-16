@@ -5,7 +5,7 @@ instance/*
 
 ### Flask.Python Stack ###
 # Byte-compiled / optimized / DLL files
-__pycache__/
+application/__pycache__/
 *.py[cod]
 *$py.class
 
@@ -157,7 +157,7 @@ dmypy.json
 
 
 # db
-application/site.db
+./application/site.db
 
 # node modules
-application/static/node_modules
+./application/static/node_modules
