@@ -1,0 +1,28 @@
+{% extends "blank.html" %}
+{% block content %}
+<script src="static/assets/js/jquery.min.js"></script>
+    <script src="static/assets/js/bootstrap.bundle.min.js "></script>
+    <script src="static/assets/js/papaparse.min.js"></script>
+    <script src="static/assets/js/main2.js " defer > </script>
+    
+<br>
+<br>
+<div class="row justify-content-center mb-5">
+    <div class="col-8 mb-5">
+      <form method=post action="upload" id="CreateModelForm" enctype=multipart/form-data>
+        <div class="form-group">
+        <div class="custom-file">
+          <input type=file class="custom-file-input" id="file" name=profile>
+          <label class="custom-file-label" for="UploadFile">Choose file</label>
+        </div>
+      </div>
+      <input type=submit>
+
+      </form>
+        <button class="btn btn-primary btn-block" onClick="uploadFile()">UploadFile</button>
+        <button class="btn btn-primary btn-block">Create Model</button>
+    </div>
+     <div id="parsed_csv_list" class="mt-5 mb-5"></div>
+</div>
+</body>
+{% endblock content %}

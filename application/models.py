@@ -44,7 +44,7 @@ class UserView(ModelView):
     can_view_details = True
     column_exclude_list = ['password', ]
     column_searchable_list = ['email',]
-
+   
 admin.add_view(UserView(User, db.session))
 
 # define RoleView
