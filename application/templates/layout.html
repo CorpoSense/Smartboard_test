@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
-<<<<<<< HEAD
-
-=======
->>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
-    
+<head>    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -30,42 +25,30 @@
       <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container">
           <a class="navbar-brand mr-4" href="/"> SmartBoard </a>
-<<<<<<< HEAD
 
       <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container">
           <a class="navbar-brand mr-4" href="/"> SmartBoard </a>
-=======
->>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarToggle">
             <div class="navbar-nav mr-auto">
-<<<<<<< HEAD
 
               <a class="nav-item nav-link" href="{{ url_for('acceuil') }}">Acceuil</a>
 
-=======
->>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
               <a class="nav-item nav-link" href="{{ url_for('about') }}">About</a>
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
               {% if current_user.is_authenticated %}
-<<<<<<< HEAD
-<
-=======
->>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
+
                 <a class="nav-item nav-link" href="{{ url_for('NewModal') }}">Model</a>
                 <a class="nav-item nav-link" href="{{ url_for('account') }}">Account</a>
                 <a class="nav-item nav-link" href="{{ url_for('logout') }}">Logout</a>
                 <a class="nav-item nav-link" href="{{ url_for('index') }}">Admin dashboard</a>
 
-<<<<<<< HEAD
 
-=======
->>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
               {% else %}
                 <a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a>
                 <a class="nav-item nav-link" href="{{ url_for('register') }}">Register</a>
@@ -74,18 +57,12 @@
           </div>
         </div>
       </nav>
-<<<<<<< HEAD
 
-=======
->>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
     
     {% block content %}{% endblock %}
 
   
     <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
-<<<<<<< HEAD
 
-=======
->>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
   </body>
 </html>
