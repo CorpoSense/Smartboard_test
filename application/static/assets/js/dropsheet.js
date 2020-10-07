@@ -1,8 +1,11 @@
 
+<<<<<<< HEAD
 /* oss.sheetjs.com (C) 2014-present SheetJS -- http://sheetjs.com */
 /* vim: set ts=2: */
 
 
+=======
+>>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
 var DropSheet = function DropSheet(opts) {
   if(!opts) opts = {};
   var nullfunc = function(){};

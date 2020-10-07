@@ -23,7 +23,10 @@
   --danger: #f86c6b;
   --light: #f0f3f5;
   --dark: #2f353a;
+<<<<<<< HEAD
   --bodycolor: #E0E5E5;
+=======
+>>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -56,10 +59,16 @@ body {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
+<<<<<<< HEAD
   color: #08151a;
   text-align: left;
   background-color: #E0E5E5 !important;
  
+=======
+  color: #23282c;
+  text-align: left;
+  background-color: #e4e5e6;
+>>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
 }
 
 [tabindex="-1"]:focus {
@@ -128,7 +137,12 @@ blockquote {
 
 b,
 strong {
+<<<<<<< HEAD
   font-weight: bolder;}
+=======
+  font-weight: bolder;
+}
+>>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
 
 small {
   font-size: 80%;
@@ -576,9 +590,18 @@ pre code {
 }
 
 .container-fluid {
+<<<<<<< HEAD
   font-style: italic;
  
   }
+=======
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+>>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
 
 .row {
   display: -ms-flexbox;
@@ -1991,7 +2014,10 @@ textarea.form-control {
 
 .form-group {
   margin-bottom: 1rem;
+<<<<<<< HEAD
   color: white;
+=======
+>>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
 }
 
 .form-text {
@@ -2080,7 +2106,11 @@ textarea.form-control {
   background-repeat: no-repeat;
   background-position: center right calc(0.375em + 0.1875rem);
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+<<<<<<< HEAD
 } 
+=======
+}
+>>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
 
 .was-validated .form-control:valid:focus, .form-control.is-valid:focus {
   border-color: #4dbd74;
@@ -2330,9 +2360,12 @@ textarea.form-control {
     align-items: center;
     margin-bottom: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
     color: white;
 =======
 >>>>>>> e85a369adbda9ba2c4796a9ca33c0e1aa3b77db9
+=======
+>>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
   }
   .form-inline .form-control {
     display: inline-block;
@@ -4381,7 +4414,11 @@ input[type="button"].btn-block {
   .navbar-expand-xl > .container,
   .navbar-expand-xl > .container-fluid {
     padding-right: 0;
+<<<<<<< HEAD
     padding-left: 0;  
+=======
+    padding-left: 0;
+>>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
   }
 }
 
@@ -4817,7 +4854,11 @@ input[type="button"].btn-block {
   padding: 0.75rem 1rem;
   margin-bottom: 1.5rem;
   list-style: none;
+<<<<<<< HEAD
   background-color: #E0E5E5;
+=======
+  background-color: #fff;
+>>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
   border-radius: 0;
 }
 
@@ -10380,7 +10421,11 @@ a.text-dark:hover, a.text-dark:focus {
 
 .breadcrumb-menu .btn:hover, .breadcrumb-menu .btn.active {
   color: #23282c;
+<<<<<<< HEAD
   background: url("static/icons/info.png");
+=======
+  background: transparent;
+>>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
 }
 
 .breadcrumb-menu .open .btn {
@@ -12221,7 +12266,11 @@ canvas {
   height: 55px;
   padding: 0;
   margin: 0;
+<<<<<<< HEAD
   background-color: #041420;
+=======
+  background-color: #fff;
+>>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
   border-bottom: 1px solid #c8ced3;
 }
 
@@ -12666,9 +12715,15 @@ canvas {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
+<<<<<<< HEAD
   padding: -0;
   color: #fff;
   background: #041420; 
+=======
+  padding: 0;
+  color: #fff;
+  background: #2f353a;
+>>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
 }
 
 .sidebar .sidebar-close {
@@ -13879,7 +13934,10 @@ app-root {
 .app-header {
   -ms-flex: 0 0 55px;
   flex: 0 0 55px;
+<<<<<<< HEAD
   border-bottom: -0px solid #c8ced3
+=======
+>>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
 }
 
 .app-footer {
@@ -16385,6 +16443,7 @@ body {
 .was-validated .form-control:invalid, .form-control.is-invalid {
   background-position: right calc(0.375em + 0.1875rem) center;
 }
+<<<<<<< HEAD
 strong{
   color: #fff;
 }
@@ -16410,4 +16469,6 @@ strong{
   transition: cubic-bezier(0.645, 0.045, 0.355, 1) 1s;
 
 }
+=======
+>>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
 /*# sourceMappingURL=style.css.map */

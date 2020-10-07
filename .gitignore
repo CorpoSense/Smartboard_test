@@ -6,6 +6,7 @@ instance/*
 ### Flask.Python Stack ###
 # Byte-compiled / optimized / DLL files
 <<<<<<< HEAD
+<<<<<<< HEAD
 application/__pycache__/
 =======
 <<<<<<< HEAD
@@ -14,6 +15,9 @@ application/__pycache__/
 __pycache__/
 >>>>>>> 4985a5e31218d9e8d8eea10957f4520baefe9a7d
 >>>>>>> e85a369adbda9ba2c4796a9ca33c0e1aa3b77db9
+=======
+application/__pycache__/
+>>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
 *.py[cod]
 *$py.class
 
@@ -165,13 +169,17 @@ dmypy.json
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> e85a369adbda9ba2c4796a9ca33c0e1aa3b77db9
+=======
+>>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
 # db
 ./application/site.db
 
 # node modules
+<<<<<<< HEAD
 <<<<<<< HEAD
 ./application/static/node_modules
 =======
@@ -179,3 +187,6 @@ dmypy.json
 =======
 >>>>>>> 4985a5e31218d9e8d8eea10957f4520baefe9a7d
 >>>>>>> e85a369adbda9ba2c4796a9ca33c0e1aa3b77db9
+=======
+./application/static/node_modules
+>>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9

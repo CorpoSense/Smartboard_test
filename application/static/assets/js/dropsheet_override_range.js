@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 
 /* oss.sheetjs.com (C) 2014-present SheetJS -- http://sheetjs.com */
 /* vim: set ts=2: */
 
 
+=======
+>>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
 function update_sheet_range(ws) {
   var range = {s:{r:Infinity, c:Infinity},e:{r:0,c:0}};
   Object.keys(ws).filter(function(x) { return x.charAt(0) != "!"; }).map(XLSX.utils.decode_cell).forEach(function(x) {

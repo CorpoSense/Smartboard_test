@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> e85a369adbda9ba2c4796a9ca33c0e1aa3b77db9
+=======
+>>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
 # Description
 SmartBoard is a smart business dashboard that allows users to apply one or more Data Science algorithms to a dataset (e.g. Regression, Clustering, Classification, Association) to solve a business data problem (such as fraud detection, sales forecasting, customer segmentation ... etc).
 #	Objectif
@@ -18,6 +21,7 @@ SmartBoard is a smart business dashboard that allows users to apply one or more 
 # Install the requirements inside the app folder
 • $ pip install -r requirements.txt
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 # Smartboard_test
@@ -31,3 +35,5 @@ with Some functions  generate different views of the sheets:
     sheet_to_formulae generates a list of formulae
 
 >>>>>>> e85a369adbda9ba2c4796a9ca33c0e1aa3b77db9
+=======
+>>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
