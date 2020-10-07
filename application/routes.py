@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
 from flask import render_template, url_for, flash, redirect, request, jsonify, send_from_directory
 from application import app, db, bcrypt, uploads_dir
 from application.forms import RegistrationForm, LoginForm
@@ -21,13 +18,12 @@ def index():
 def home():
     return render_template("home.html")
 
-<<<<<<< HEAD
-=======
+
+
 @app.route("/about")
 def about():
     return render_template("about.html")
 
->>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
 
 @app.route("/register", methods=['GET', 'POST'])
 def register():
@@ -48,10 +44,7 @@ def register():
 def login():
     if current_user.is_authenticated:
         return redirect(url_for('account'))
-<<<<<<< HEAD
-        return redirect(url_for('account'))
-=======
->>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
+
     form = LoginForm()
     if form.validate_on_submit():
         user = User.query.filter_by(email=form.email.data).first()
@@ -59,19 +52,13 @@ def login():
             login_user(user, remember=form.remember.data)
             next_page = request.args.get('next')
             return redirect(next_page) if next_page else redirect(url_for('account'))
-<<<<<<< HEAD
-            return redirect(next_page) if next_page else redirect(url_for('account'))
-=======
->>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
+            
         else:
             flash('Login Unsuccessful. Please check email and password', 'danger')
     return render_template('login.html', title='Login', form=form)
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
 @app.route("/preview")
 def preview():
     return render_template('preview.html')
@@ -95,10 +82,7 @@ def menu():
 def account():
     return render_template('account.html', title='Account')
 
-<<<<<<< HEAD
 
-=======
->>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
 @app.route("/test", methods=['GET', 'POST'])
 def test():
     test = Clustering.show_test()
@@ -108,12 +92,10 @@ def test():
 def model():
     return render_template('model.html')
 
-<<<<<<< HEAD
+
 @app.route("/about")
 def about():
     return render_template('about.html')
-=======
->>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
 
 @app.route('/CreateModal', methods = ['GET', 'POST'])
 def CreateModal():
@@ -134,8 +116,5 @@ def receive_data():
     content = request.get_json()
     algo = Clustering(f.filename,content[0],content[1])
     test = algo.show_test(content)
-<<<<<<< HEAD
+
     return jsonify({"test":test})
-=======
-    return jsonify({"test":test})
->>>>>>> d1bcc1f60c970801d84544a6b7ddbece8a1fd0b9
