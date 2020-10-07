@@ -1,0 +1,69 @@
+
+{% extends "index.html" %}
+{% block content %}
+
+
+<div class="about">
+    <img src="static/icons/coverAbout.png" width="100%">
+</div>
+<div class="text-center">
+
+    <h1 class="display-1" style="color:#00256c; margin-top: -70px;"><b>SmartBorad</b> </h1>
+    <H3 style="font-weight:bold; color:#00256c;"><u>Everything about us :</u></H3>
+</div>
+<h4 style="color:#009adf;"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Description</u></b>:</h4>
+<p style="font-weight:bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SmartBoard is a smart business dashboard
+    that allows users to apply
+    one or more Data Science algorithms to a dataset (e.g. Clustering) to solve a business &nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;data problem (such as
+    customer segmentation ... etc).<br>
+
+</p>
+<h4 style="color:#009adf;"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Objectif:</u></b></h4>
+<p style="font-weight:bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provide an easy to use yet powerful
+    solution for Data Analytics
+    using a predefined
+    algorithms and ready to use data model for most common data problem. </p>
+
+<h4 style="color:#009adf;"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>How it works?</u></b></h4>
+
+<ul style="font-weight:bold;">
+
+    <li> Companies can upload their data to the dashboard (via http or ftp) in different formats (csv, xlsx)</li>
+    <li> They can then select an appropriate algorithm (Clustering) to solve a specific business data problem
+        (things
+        like: Customer Segmentation)</li>
+    <li> Generate a Machine Learning model for different purposes ( Classification…etc.)</li>
+    <li> Save the generated data model for further analysis (each user/company has his own space to store and
+        restore
+        data model)</li>
+    <li> Use the predefined model on a new uploaded dataset for analysis.</li>
+    </p>
+</ul>
+
+
+<h4 style="color:#009adf;"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Targeted audience:</u></b></h4>
+<ul style="font-weight:bold;">
+    <li> Companies from different industries including: pharmacy, telecom, food industry.Other companies can use
+        solution if it fit their needs.</li>
+    <li> Business model: this solution will be provided for free as SAAS, however; the uploaded dataset is limited,
+        companies can subscribe for dedicated hostingor self-hosting, consultancy can be provided if needed, the
+        full code source is provided in public hosting service.</li>
+</ul>
+
+
+<h4 style="color:#009adf;"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Technical details:</u></b></h4>
+<ul style="font-weight:bold;">
+    <li> The full solution will be written in Python 3, using the most common open source libraries.</li>
+    <li> We used python Web framework Flask with many other extensions.</li>
+    <li> The front-end tier is provided (template, css…), however the user experience should be simplified for
+        non-technical users with more visualization libraries, charts & graphs should be included to provide users
+        with more illustration so they can judge the quality of the output easily</li>
+    <li> Heavy tasks (things like Deep learning, neural nets…) should be scheduled using a pool of worker process
+        which will notify the user once it’s finished (Pool worker is allowed only for premium user).</li>
+
+</ul>
+</div>
+
+{% endblock content %}
+   

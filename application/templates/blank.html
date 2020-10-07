@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="./">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+  <title>SmartBoard</title>
+  <link rel="icon" type="image/ico" href="static/icons/logopfe.png" sizes="any" />
+
+  <!-- Main styles for this application-->
+  <link href="static/css/style.css" rel="stylesheet">
+  <link href="static/vendors/pace-progress/css/pace.min.css" rel="stylesheet">
+</head>
+
+<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+  <header class="app-header navbar">
+   
+    <a class="navbar-brand" href="index"style="vertical-align: text-top; margin-top:-5px;" >
+      <img src="static/icons/logopfe.png" style="margin-left: 40px; margin-top:5px;" width="40" height="40" class="d-inline-block align-top" alt="">
+     &nbsp;<strong>SMARTBOARD</strong>
+    </a>
+    
+  
+  </header>
+  <div class="app-body">
+    
+        <div class="sidebar">
+          <nav class="sidebar-nav">
+            <ul class="nav">
+              <li class="nav-item">
+               
+              </li>
+              <li class="nav-title">Dashboard</li>
+    
+              <li class="nav-item nav-dropdown">
+                <a class="nav-link" href="account">
+                  <img src="static/icons/account.png" width="24" />
+                  <i class="nav-icon"></i> Account</a>
+    
+              <li class="nav-item nav-dropdown">
+              <li class="nav-item nav-dropdown">
+    
+                  
+                  <a class="nav-link" href="menu">
+                    <img src="static/icons/data-mining.png" width="24" />
+                    <i class="nav-icon"></i> Menu</a>
+                <a class="nav-link" href="logout">
+                  <img src="static/icons/logout.png" width="22" />
+                  <i class="nav-icon"></i> Logout</a>
+            </ul>
+          </nav>
+        </div>
+      
+        <main class="main">
+          {% block content %}
+          {% endblock content %}
+      </main>
+  </div>
+</body>
+
+</html>

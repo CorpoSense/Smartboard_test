@@ -1,0 +1,13 @@
+Flask
+Flask-wtf
+Flask-Login
+Flask-Admin
+Flask-SQLAlchemy
+Flask-Security
+Flask-Bootstrap
+Flask-Uploads
+Flask-Dropzone
+numpy
+npm 
+node_modules
+nodejs

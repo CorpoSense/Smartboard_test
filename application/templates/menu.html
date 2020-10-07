@@ -1,0 +1,37 @@
+{% extends "blank.html" %}
+{% block content %}
+<title>Menu</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<div class="container ">
+    <h1 class=" text-center" >MENU</h1>
+<br>
+    <div class="row text-center justify-content-center">
+        <div class="col-5 ">
+            <div class="card shadow scaled" >
+                <img src="static\assets\img\im2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><b>SHEET JS</b></h5>
+                  <p class="card-text">This option allows you to view Excel files with some option specific to SHEET JS.</p>
+                  <a href="preview" class="btn btn-primary btn-lg">Go to sheet js</a>
+                </div>
+              </div>
+        </div>
+    
+        <div class="col-5">
+            <div class="card shadow scaled" >
+                <img src="static\assets\img\im1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><b>CLUSTERING</b></h5>
+                  <p class="card-text">This option allows you to create your own clustering model with your own data.</p>
+                  <a href="model" class="btn btn-primary btn-lg">Create your own model</a>
+                </div>
+              </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock content %}

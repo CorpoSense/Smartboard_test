@@ -1,0 +1,40 @@
+{% extends "blank.html" %}
+{% block content %}
+<html>
+  <head>
+    <title>Model</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="static/assets/css/sheetjs.css">
+    <script src="static/assets/js/jquery.min.js"></script>
+    <script src="static/assets/js/bootstrap.bundle.min.js "></script>
+    <script src="static/assets/js/papaparse.min.js"></script>
+    <style type="text/css"></style>
+  </head>
+  <body>
+
+<div class="text-center mt-5">
+    <h1 class="display-3 mb-5"> Create your Model </h1>
+</div>
+<div class="row justify-content-center mb-5">
+  <div class="col-8 mb-5">
+    <form id="CreateModelForm" enctype=multipart/form-data>
+      <div class="form-group">
+      <div class="custom-file">
+      <input type="file" class="custom-file-input" id="file" name="file">
+      <label class="custom-file-label" for="file">Choose file</label>
+      
+    </div>
+    </div>
+  </form>
+    <button class="btn btn-primary btn-block" onClick="uploadFile()">Show array</button>
+    <button class="btn btn-primary btn-block" id="SendData">Show cluster</button>  
+ </div>
+</div>
+
+<div id="parsed_csv_list" class="mt-5 mb-5"></div>
+<script src="static/assets/js/main2.js" defer ></script>
+
+
+</body>
+</html>
+{% endblock content %}

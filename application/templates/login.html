@@ -1,0 +1,76 @@
+
+
+{% extends "index.html" %}
+{% block content %}
+
+
+    <div class="container">
+      <div class="row justify-content-center"><br>
+        <div class="col-md-8"><br><br>
+          <div class="card-group" style="margin-top: 25px;">
+            <div class="card p-4">
+              <form method="POST" action="">
+                {{ form.hidden_tag() }}
+    
+              <div class="card-body">
+                <h1>Login</h1>
+                <p class="text-muted">Sign In to your account</p>
+                <div class="form-group mb-3">
+                  {{ form.email.label(class="form-control-label") }}
+                  {% if form.email.errors %}
+                      {{ form.email(class="form-control form-control-lg is-invalid") }}
+                      <div class="invalid-feedback">
+                          {% for error in form.email.errors %}
+                              <span>{{ error }}</span>
+                          {% endfor %}
+                      </div>
+                  {% else %}
+                      {{ form.email(class="form-control form-control-lg") }}
+                  {% endif %}
+              </div>
+              <div class="form-group">
+                {{ form.password.label(class="form-control-label") }}
+                {% if form.password.errors %}
+                    {{ form.password(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.password.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.password(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+            <div class="form-check mb-2">
+              {{ form.remember(class="form-check-input") }}
+              {{ form.remember.label(class="form-check-label") }}
+          </div>
+                <div class="row">
+                
+                  <div class="col-6">
+                    {{ form.submit(class="btn btn-primary px-9") }}
+
+                  </div>
+                  <div class="col-6 text-right">
+                    <a href="#">Forgot Password?</a>
+                  </div>
+                </div>
+              </div>
+              </form>
+            </div>
+            <div class="card text-white bg-primary py-5 d-md-down-none" style="width:44%">
+              <div class="card-body text-center">
+                <div>
+                  <h2>Sign up</h2><br><br>
+                  <button class="btn btn-primary active mt-3" type="button" onclick="location.href='register'">Register Now!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </body>
+{% endblock content %}
+
+

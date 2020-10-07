@@ -1,0 +1,53 @@
+html {
+  overflow: auto;
+  background-color:#e4e5e6;
+}
+#drop{
+  border:2px dashed #bbb;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  padding:25px;
+  text-align:center;
+  /*width:128px;
+  font:20pt bold,"Vollkorn";color:#bbb*/
+}
+#center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+#left {
+  width:188px;
+  position:absolute;
+  top: 50px;
+  right: 150 px;
+}
+#right {
+  position:absolute;
+  right: 100px;
+  left: 360px;
+  top: 150px;
+  padding: 0px;
+}
+
+
+#header {
+  height:168px;
+}
+#grid {
+  height: 50px;
+  display: none;
+}
+
+#parsed_csv_list{
+  max-height: 600px;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+.winpt { width:98%; }
+.success { color: #468847; }
+.error { color: #b94a48; }
+.info { color: #3a87ad; }
+.pre { white-space: pre-wrap; }
+.pre { white-space: pre-wrap; }

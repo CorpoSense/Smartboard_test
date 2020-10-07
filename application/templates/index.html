@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="./">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+  <title>SmartBoard</title>
+  <!-- Icons-->
+  <link rel="icon" type="image/ico" href="static/icons/logopfe.png" sizes="any" />
+
+
+  <!-- Main styles for this application-->
+  <link href="static/css/style.css" rel="stylesheet">
+  <link href="static/vendors/pace-progress/css/pace.min.css" rel="stylesheet">
+
+
+</head>
+
+<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+  <header class="app-header navbar">
+    <a class="navbar-brand" href="index"style="vertical-align: text-top; margin-top:-5px;" >
+      <img src="static/icons/logopfe.png" style="margin-left: 40px; margin-top: 10px; margin-top:5px;" width="40" height="40" class="d-inline-block align-top" alt="">
+     &nbsp;<strong>SMARTBOARD</strong>
+    </a>
+
+
+  </header>
+
+  <div class="app-body">
+    <div class="sidebar">
+      <nav class="sidebar-nav">
+
+        <ul class="nav">
+        <!--  <li class="nav-item">
+            <a class="nav-link" href="index">
+              <img src="static/icons/logopfe.png" width="50">
+              <i class="center"></i> &nbsp&nbsp <strong>SMARTBOARD</strong>
+
+
+            </a>
+          </li>-->
+          <li class="nav-title">Dashboard</li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about"></i>
+              <img src="static/icons/icone.png" width="23" />
+              <i class="nav-icon"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login">
+              <img src="static/icons/login.png" width="22">
+              <i class="nav-icon"></i> Login</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="register">
+              <img src="static/icons/register.png" width="22" />
+
+              <i class="nav-icon"></i> Register</a>
+          </li>
+
+          </li>
+        </ul>
+
+      </nav>
+    </div>
+    <main class="main">
+      {% block content %}
+
+
+      <!-- Breadcrumb-->
+      <div class="Breadcrumb">
+
+      </div>
+
+      <!-- Breadcrumb Menu-->
+
+      <div class="container-fluid" text-align="left" ;>
+        <br><br>
+        <br><br>
+        <h1>
+          <bold>Open Data Tools for Data Science</bold>
+        </h1>
+        <br>
+        <p>The only Dashboard you need to analyse your Daily Datasets</p><br>
+        <p>SmartBoard is an open source Dashboard for Data Analysis</p>
+        <br><br> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        <a class="btn btn-primary btn-lg shadow scaled" href="http://127.0.0.1:5000/login" role="button"><b>LOGIN</b></a>
+        <a class="btn btn-primary btn-lg shadow scaled" href="http://127.0.0.1:5000/register" role="button"><b>REGISTER</b></a>
+
+      </div>
+
+      <div class="back">
+
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp<img src="static/icons/robot.png" width="80%">
+      </div>
+      {% endblock content %}
+
+    </main>
+    <script src="static/js/main.js"></script>
+</body>
+
+</html>

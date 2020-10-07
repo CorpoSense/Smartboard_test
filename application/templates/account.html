@@ -1,0 +1,24 @@
+{% extends "blank.html" %}
+{% block content %}
+
+<center> <h1 style="font-style: italic"> Welcome to your account {{ current_user.username }} </h1><br></style>
+<h4  style="font-style: italic">Your Open source machine learning and data visualization.
+
+</h4>
+
+<div class="container ml-5">
+    <div class="row text-center justify-content-center">
+        <div class="col-5 ">
+            <div class="card shadow scaled" >
+                <img src="static\assets\img\im3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Your account</h5>
+                  <p class="card-text">Access your menu with a single click and carry out your data study.</p>
+                  <a href="menu" class="btn btn-primary btn-lg">Let's start</a>
+                </div>
+              </div>
+
+        </div>
+    </div>
+</div>
+{% endblock content %}
